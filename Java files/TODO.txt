@@ -1,1 +1,21 @@
 This could be used as a cohesive devlog/slow IM.
+
+3/17 @ 7:56pm
+Hey man,
+
+I've been having a hard time understanding, but I think I finally got it once I familiarized myself with HashMaps in Java.
+
+I've uploaded 2 java files: Initialize.java and MapTest.java. MapTest is the driver that uses Initialize. Initialize will parse the data from the RTF file and put it into a
+HashMap data structure.
+
+I think it'd be useful to divide the RTF file into sections based on white space, so let's say that Section 1 is the first line that defines the amount of nodes/edges,
+Section 2 is the respective node's X and Y coordinates, and Section 3 is the list of edges.
+
+We need to do the following:
+	-Create a LinkedList for each node's edges
+	-Populate the LinkedList using Section 3
+	-Figure out the weights of Section 2 and apply them to the LinkedList (the calculateWeights method is useful for this)
+
+This will put us in a really good spot. I've copied the test RTF file as "testusa_map_data.rtf" that only inlcude 6 nodes rather than the crazy amount of the actual test file.
+
+I'll see if I can work more on this tonight. The due date has been pushed back to Sunday, so we have time.
