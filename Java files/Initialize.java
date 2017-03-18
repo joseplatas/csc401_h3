@@ -62,7 +62,7 @@ public class Initialize {	//This class does all of the pre-processing, like read
 		return null;
 	}
 	
-	public double calculateWeights(int xcoord2, int xcoord1, int ycoord2, int ycoord1) {
+	public double calculateWeights(int xcoord2, int xcoord1, int ycoord2, int ycoord1) { //Calculates the weights between two cities
 		double weight;
 		weight = Math.sqrt((Math.abs(Math.pow(xcoord2 - xcoord1, 2)) + Math.abs(Math.pow(ycoord2 - ycoord1, 2))));
 		return weight;
@@ -71,5 +71,16 @@ public class Initialize {	//This class does all of the pre-processing, like read
 	protected int numNodes; //Found in Section 1 of the RTF file, these are the cities.
 	protected int numEdges; //Found in Section 1 of the RTF file, there are the connections between the cities.
 	
+}
+
+class Node {
+	public Node(int newIndex, int x, int y) {
+		index = newIndex;
+		xcoord = x;
+		ycoord = y;
+	}
 	
+	protected int index;
+	protected int xcoord;
+	protected int ycoord;
 }
