@@ -19,3 +19,7 @@ We need to do the following:
 This will put us in a really good spot. I've copied the test RTF file as "testusa_map_data.rtf" that only inlcude 6 nodes rather than the crazy amount of the actual test file.
 
 I'll see if I can work more on this tonight. The due date has been pushed back to Sunday, so we have time.
+
+3/18 11:00pm
+Ill be working on this tonight too.
+Thanks for the follow up.
